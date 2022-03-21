@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>@quakumei</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Лучший шрифт на свете */
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+
+            display: flex;
+            flex-direction: row;
+
+            background-color: #1A1826;
+            color: #D9E0EE;
+
+            font-size: 14px;
+
+        }
+
+        ol {
+
+            padding: 0rem;
+            padding-left: 1rem;
+        }
+
+        li {
+            width: 100%
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            width: fit-content;
+            font-size: 22px;
+            max-width: 40%;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .preform {
+            margin-top: 3rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .preform-block {
+            max-width: 40rem;
+        }
+
+        .container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        form {
+            box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+            padding: 1rem;
+        }
+
+        .input-group {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group:first-child {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group input {
+
+            background-color: #eff2fa;
+            border-radius: 20rem;
+            border: 3px solid #96CDFB;
+            color: #161320;
+            padding: 0.5rem;
+            padding-left: 1rem;
+        }
+
+        .input-group label {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+            font-size: 22px;
+
+        }
+
+        .wordart {
+            font-family: Arial, sans-serif;
+            font-size: 4em;
+            font-weight: bold;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+        }
+
+        .wordart.rainbow {
+            transform: scale(1, 1.5);
+            -webkit-transform: scale(1, 1.5);
+            -moz-transform: scale(1, 1.5);
+            -o-transform: scale(1, 1.5);
+            -ms-transform: scale(1, 1.5);
+        }
+
+        .wordart.rainbow .text {
+            background: red;
+            background: -webkit-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+            background: -o-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+            background: -moz-linear-gradient(left, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+            background: linear-gradient(to right, #b306a9, #ef2667, #f42e2c, #ffa509, #fdfc00, #55ac2f, #0b13fd, #a804af);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preform">
+        <h1>Привет! Это домашнее задание по Frontend за 3 лекцию.</h1>
+
+        <div class="preform-block">
+
+
+            <p class="text">Мы с вами уже успели изучить некоторые инструменты, как <i>HTML</i> и <i>CSS</i>.
+                Мне кажется, разметкой этого документа Вас не удивить, однако, это задаие больше расчитано на понимание
+                CSS, чем HTML. Рассмотрите разметку этого документа и создайте окно входа и исправьте намеренно
+                оставленные
+                ошибки в этом документе:</p>
+            <!-- Браузер интерпретирует это как неправильную разметку и закрывает тег, значит нельзя помещать блочные элементы в параграфы -->
+            <br>
+            <!-- Я первое задание не понял... -->
+            <ol>
+                <li> Сделайте этот текст более читаемым - сожмите его в колонку и разместите её слева с таким
+                    расчётом,
+                    чтобы всё остальное наполнение колонки не перекрывало колонку. Можете изменять размер текста, а в
+                    идеале
+                    -
+                    добавить полосу прокрутки.
+                </li>
+                <li> Снизу вы видите форму входа, однако, что-то в ней не так. Почините её и убедитесь, что пароль
+                    не подсмотреть.
+                </li>
+                <li> Сама форма должна находиться по центру оставшейся части страницы (то есть ширина страницы
+                    минус ширина колонки с этим текстом)
+                </li>
+                <li> Форма должна быть обведена и за ней должна быть тень.
+                </li>
+                <li> Установите документу фоновый цвет.
+                </li>
+                <li> Украсьте саму форму на свой вкус. Это более дизайнерское задание - чем лучше получится, тем
+                    больше баллов ;)
+                </li>
+                <li> Задайте заголовку браузера имя своего Telegram-аккаунта. <b><u>Это очень важно, иначе баллы за
+                            задание Вам выставлены не будут!</u></b></li>
+            </ol>
+
+            <br><br>
+            <p class="text">
+                В выполнении этих заданий немного (возможно) должны помочь классы, расставленные по документу. В
+                качестве
+                селекторов вы можете
+                свободно использовать и обращение по ID. В качестве ответа на задание пришлите измененный документ.
+                Максимальное количество баллов за задание - 50. Соответствие каждому критерию оценивается.
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <form method="get">
+            <div class="input-group">
+                <label for="login" class="wordart rainbow""><span class=" text">Login</span> </label>
+                <input type="text" name="login" placeholder="ИП Денис Жданов">
+            </div>
+            <div class="input-group ">
+                <label for="password" class="wordart rainbow"><span class="text">Password</span> </label>
+                <input type="password" name="password" placeholder="********">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
